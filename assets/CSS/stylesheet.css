@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: green;
+    font-family: Arial;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+   }
+header{
+    padding: 40px;
+    text-align: center;
+    color: #fff;
+    background-color: orange;
+}
+
+nav {
+    display: flex;
+    /* Align the child elements to the right side of the parent */
+    justify-content: flex-end;
+    background-color: #d8a47f;
+    }
+
+    nav a {
+    color: #13293d;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    }
+p{
+    font-size: 16px;
+}
+h1{
+    font-size: 100px;
+}
+
+
+
+
+.ImageLink{
+    border: 5px solid #555;
+}
+#Work{
+    text-align: right;
+    background-color: aqua;
+}
+.Imgs{
+    border-left: 6px solid green;
+    height: 100%;
+    font-family: Arial;
+    margin: auto;
+    display: flex;  
+    align-items: center;  
+    justify-content: flex-start;
+    margin-left: 35%;
+    flex: 0 0 60%;
+}
+
+.LeftText{
+    
+    
+}
+#AboutMe{
+    background-color: rebeccapurple;
+}
+#Contact{
+    background-color: red;
+}
+
+.footer{
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    main,
+    nav,
+    .ImageLink {
+      flex-direction: column;
+    }
+
+  }
