@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: green;
+    background-color: white;
     font-family: Arial;
     margin: 0;
     display: flex;
@@ -14,30 +14,34 @@ body {
     justify-content: flex-start;
    }
 header{
-    padding: 40px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
     color: #fff;
-    background-color: orange;
+    background-color: navy;
 }
 
 nav {
     display: flex;
-    /* Align the child elements to the right side of the parent */
-    justify-content: flex-end;
-    background-color: #d8a47f;
-    }
-
-    nav a {
-    color: #13293d;
-    padding: 14px 20px;
+    justify-content: space-between;
+    min-width: 300px;
+    
+  }
+  
+  nav a {
+    color: white;
+    font-weight: bold;
     text-decoration: none;
-    text-align: center;
-    }
+    font-size: 25px;
+    text-decoration: underline;
+  }
+
 p{
-    font-size: 16px;
+    font-size: 25px;
 }
 h1{
-    font-size: 100px;
+    font-size: 50px;
 }
 
 
@@ -46,35 +50,60 @@ h1{
 .ImageLink{
     border: 5px solid #555;
 }
-#Work{
-    text-align: right;
-    background-color: aqua;
-}
-.Imgs{
-    border-left: 6px solid green;
-    height: 100%;
+
+.Imgs, #Contact ul, #AboutMe div {
+    
+    
     font-family: Arial;
     margin: auto;
     display: flex;  
+    flex-direction: row;
     align-items: center;  
     justify-content: flex-start;
-    margin-left: 35%;
-    flex: 0 0 60%;
+    margin-left: 25%;
+    flex: 0 0 auto;
+}
+
+.WorkFlex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.WorkFlex a{
+    width: 50%;
+    display: block;
+}
+.WorkFlex a:first-child{
+    width: 100%;
+}
+
+.WorkFlex img{
+    width: 100%;
 }
 
 .LeftText{
-    
+    height: 100%;
+    font-family: Arial;
+    display:inline-flex; 
+    align-items: center;  
+    margin-left: 25%;
     
 }
-#AboutMe{
-    background-color: rebeccapurple;
+.Test{
+    border-right: 6px solid navy;
+    height: 100%;
+    align-items:flex-start;
+    margin-right: 10%;
+    flex: 0 0 20%;
+   
+    
 }
-#Contact{
-    background-color: red;
+footer{
+    background-color: navy;
 }
 
 .footer{
     text-align: center;
+    color: white;
 }
 
 @media screen and (max-width: 768px) {
