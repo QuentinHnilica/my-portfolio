@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: Arial;
 }
 
 body {
@@ -12,6 +13,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     justify-content: flex-start;
+    background-color: #cccccc;
    }
 header{
     display: flex;
@@ -19,7 +21,7 @@ header{
     align-items: center;
     padding: 1%;
     color: #fff;
-    background-color: navy;
+    background-image: linear-gradient(navy, gray);
 }
 
 nav {
@@ -45,60 +47,93 @@ h1{
 }
 
 
-
-
-.ImageLink{
-    border: 5px solid #555;
+.mainSection{
+    padding-top: 15px;
+}
+.imageLink{
+    border: 5px solid navy;
 }
 
-.Imgs, #Contact ul, #AboutMe div {
-    
-    
-    font-family: Arial;
+.imgs, #contact ul, #aboutMe div {
+
     margin: auto;
     display: flex;  
     flex-direction: row;
     align-items: center;  
     justify-content: flex-start;
-    margin-left: 25%;
+    margin-left: 10%;
     flex: 0 0 auto;
+    list-style-type: none;
+}
+.aboutMe{
+    padding: 30px 0;
 }
 
-.WorkFlex{
+.workFlex{
     display: flex;
     flex-wrap: wrap;
-}
-.WorkFlex a{
-    width: 50%;
-    display: block;
-}
-.WorkFlex a:first-child{
-    width: 100%;
-}
-
-.WorkFlex img{
-    width: 100%;
-}
-
-.LeftText{
-    height: 100%;
-    font-family: Arial;
-    display:inline-flex; 
-    align-items: center;  
-    margin-left: 25%;
     
 }
-.Test{
+
+
+.workFlex a{
+    padding-left: 40px;
+    width: 49%;
+    
+}
+
+
+.workFlex img:first-child{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.workFlex a:first-child{
+    width: 90%;
+    
+    padding: 10px 0;
+    padding-left: 15%;
+}
+
+.leftText{
     border-right: 6px solid navy;
+    padding: 7%;
     height: 100%;
     align-items:flex-start;
-    margin-right: 10%;
-    flex: 0 0 20%;
-   
+    margin-right: 15%;
+    flex: 0 0 10%;
+    text-align: right;
     
 }
+
+.imgText{
+   /* position: absolute;
+    z-index: 999;
+    margin: 0 auto;       
+    text-align:right;
+    margin-left: 8%;
+    top: 80%; 
+    color: black;
+    font-family: Arial,sans-serif; */
+
+    text-align: center;
+    z-index: 999;
+    bottom: 50%;
+    position: relative;
+    color: black;
+    font-weight: bold;
+    
+   
+
+}
+
+.contact{
+   margin-left: 10%;
+   font-size: 25px;
+}
 footer{
-    background-color: navy;
+    background-image: linear-gradient(gray, navy);
 }
 
 .footer{
@@ -107,10 +142,31 @@ footer{
 }
 
 @media screen and (max-width: 768px) {
-    main,
-    nav,
-    .ImageLink {
+    main{
+        flex-direction: column;
+      }
+
+    nav {
       flex-direction: column;
+      padding-left: 15%;
+    }
+
+    .workFlex a{
+        padding-left: 10px;
+        width: 50%;
+        height: 200px;
+    }
+
+    .imgText{
+        bottom: 60%;;
+    }
+
+    .contact{
+        margin-left: 10%;
+        font-size: 19px;
+     }
+     p{
+        font-size: 19px;
     }
 
   }
