@@ -10,15 +10,20 @@
     <body>
         <header>
             <h1>Quentin Hnilica</h1>
-            <nav role="navigation" aria-label="main navigation">
+            <nav class="navbar" role="navigation" aria-label="main navigation" id="my-nav">
                 <div id="navbarBasicExample" class="navbar-menu">
-                <div class="navbar-start navText">
-                    <a class="navbar-item"href="index.html" style="color: white;">Home</a>
-                    <a class="navbar-item" href="about.html" style="color: white;">About Me</a>
-                    <a class="navbar-item"href="projects.html" style="color: white;">My Projects</a>
+                  <div class="navbar-start">
+                    <a class="navbar-item"href="index.html">Home</a>
+                    <a class="navbar-item" href="about.html">About Me</a>
+                    <a class="navbar-item"href="projects.html">My Projects</a>
+                  </div>
                 </div>
-                </div>
-            </nav>
+                <a role="button" id="burger" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+              </nav>
         </header>
         <section class="section">
             <div class="container">
@@ -52,11 +57,36 @@
                 <a href="https://www.roblox.com/create" target="_blank"><img src="assets/imgs/RobloxStudio.jpeg" alt="RobloxStudio" width="300"></a>
             </div>
         </section>
+        <div class="modal" id="navMod">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+              <header class="modal-card-head">
+                <p class="modal-card-title" style="color: white;">Where Would You Like To Go?</p>
+                <button class="delete" aria-label="close" id="closeNav"></button>
+              </header>
+              <section class="modal-card-body">
+                <div class="columns">
+                    <div class="column is-one-third" >
+                        <a href="index.html" style="width: 100%;">Home</a>
+                    </div>
+
+                    <div class="column is-one-third">
+                        <a href="about.html" style="width: 100%;">About Me</a>
+                    </div>
+
+                    <div class="column is-one-third">
+                        <a href="projects.html" style="width: 100%;">My Projects</a>
+                    </div> 
+                  </div>
+              </section>
+            </div>
+          </div>
         <footer>
             <h2>Made by Quentin Hnilica & Bulma</h2>
             <p>
                 &copy; 2021 QuentinHnilica INC
             </p>
         </footer>
+        <script src="nav.js"></script>
   </body>
 </html>
