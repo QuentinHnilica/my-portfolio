@@ -17,5 +17,12 @@ router.get('/projects', async(req, res) => {
     res.render('projects')
 })
 
+router.get('/videogames', async(req, res) => {
+    res.render('videogames')
+})
+
+router.get('/websites', async (req, res) =>{
+    res.render('websites')
+})
 
 module.exports = router
