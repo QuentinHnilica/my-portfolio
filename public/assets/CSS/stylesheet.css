@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+html{
+    height: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    color: #fff;
+    background-image: linear-gradient(navy, gray);
+}
+nav a {
+color: white;
+font-weight: bold;
+text-decoration: none;
+font-size: 25px;
+text-decoration: underline;
+}
+.nav-body{
+    background-image: linear-gradient(navy, gray);
+}
+p{
+    font-size: 25px;
+}
+h1{
+    font-size: 50px;
+}
+
+body{
+    background-color: gray;
+    min-height: 100%;
+}
+
+.home-body{
+    /* background-color:lightgrey;
+    min-height: 100%; */
+    background: url(../imgs/port-back.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.home-box{
+    margin: 0 auto;
+    padding: 1% 15%;
+}
+
+.myButtons{
+    height: 100%;
+    width: 100%;
+}
+
+.welcomeText{
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.btn-blue{
+    border-color: cyan;
+    background-color:deepskyblue;
+    color: white;
+}
+
+.btn-green{
+    border-color: lightgreen;
+    background-color: lawngreen;
+    color: white;
+}
+
+.btn-purp{
+    border-color: purple;
+    background-color:rebeccapurple ;
+    color: white;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 48rem){
+    .home-box{
+        padding: 2rem 0;
+    }
+}
