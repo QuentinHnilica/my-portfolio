@@ -91,8 +91,8 @@ body{
 }
 
 footer{
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    flex-wrap: wrap; */
 }
 
 .input-box{
@@ -178,5 +178,9 @@ footer{
 @media only screen and (max-width: 48rem){
     .home-box{
         padding: 2rem 0;
+    }
+
+    p{
+        font-size: 16px;
     }
 }
