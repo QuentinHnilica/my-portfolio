@@ -1,0 +1,30 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "This Is My Portfolio",
+  "main": "server.js",
+  "dependencies": {
+    "connect-session-sequelize": "^7.1.2",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^6.0.2",
+    "express-session": "^1.17.2",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.12.0-beta.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuentinHnilica/my-portfolio.git"
+  },
+  "author": "Quentin Hnilica",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QuentinHnilica/my-portfolio/issues"
+  },
+  "homepage": "https://github.com/QuentinHnilica/my-portfolio#readme"
+}
